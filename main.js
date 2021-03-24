@@ -33,6 +33,24 @@ var app = new Vue(
           this.index++;
         }
       },
+      //questa funzione copiata spudoratamente ma compresa solo a metà
+      dotSelection: function (topolino) {
+        this.index = topolino
+      },
+      // con i bottoni
+      // start: function () {
+      //   this.interval = setInterval(this.arrowRight, 3000);
+      // },
+      // stop: function () {
+      //   this.interval = clearInterval(this.interval);
+      // },
+      //fine copiatura
+      // presentazione: setInterval(function(){ alert("Hello"); }, 3000);
     },
+    // copiato dinuovo
+    created: function () {
+      setInterval(this.arrowRight, 3000);
+    }
+    // altra fine copiatura
   }
 );

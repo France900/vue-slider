@@ -11,7 +11,13 @@ body {
   border: 50px solid white;
 }
 
-.container1 {
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+.container1,
+.container2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,4 +26,13 @@ body {
 [class*="fa-chevron"] {
   margin: 0 20px;
   font-size: 35px;
+}
+
+.fa-circle {
+  margin: 15px;
+  font-size: 30px;
+}
+
+.active {
+  color: grey;
 }

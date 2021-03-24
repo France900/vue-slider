@@ -24,12 +24,19 @@
         </div>
       </div>
 
-      <div class="">
+      <div class="container2">
+        <!-- ho copiato la i spudoratamente, compresa solo a metà -->
         <i
           class="fas fa-circle"
           v-for="dot in theImg.length"
+          @click="dotSelection(dot-1)"
+          :class="(dot-1==index)?'active':''"
         ></i>
       </div>
+
+      <!-- <button type="button" name="button" @click="start">start</button>
+      <button type="button" name="button"@click="stop">stop</button> -->
+      <!-- fine copiatura -->
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
